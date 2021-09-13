@@ -1,0 +1,100 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
+    segoe ui, arial, sans-serif;
+  background: #373737;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.main > button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 20px;
+  background: #171717;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 250px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.msg {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+}
+
+.content {
+  position: relative;
+  color: white;
+  background: #171717;
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.content > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.content > span {
+  font-size: 2em;
+}
+
+.content > button {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background: #575757;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.content > button:hover {
+  background: rgb(255, 207, 0) !important;
+}
+
+.life {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: auto;
+  background: rgb(255, 207, 0);
+  height: 4px;
+}
